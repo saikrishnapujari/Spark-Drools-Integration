@@ -1,0 +1,57 @@
+package src.main.java
+
+import src.main.java.Traffic;
+import src.main.java.TrafficResponse;
+import src.main.java.DrivingStyle;
+
+import src.main.java.CityLocator;
+global CityLocator cityLocator;
+
+import function src.main.java.Functions.*;
+
+dialect "mvel"
+no-loop
+
+rule "traffic light green"
+when
+  $traffic : Traffic ( light == "green" )
+then
+  insertTrafficResponse(kcontext, $traffic, "proceed")
+end
+
+rule "traffic light red"
+when 
+  $traffic : Traffic ( light == "red" )
+then
+  insertTrafficResponse(kcontext, $traffic, "stop")
+end
+
+rule "traffic light yellow and driving crazy"
+when 
+  $traffic : Traffic ( light == "yellow" )
+  DrivingStyle ( style == "crazy" )
+then
+  insertTrafficResponse(kcontext, $traffic, "accelerate")
+end
+
+rule "traffic light yellow and driving sane"
+when 
+  $traffic : Traffic ( light == "yellow" )
+  DrivingStyle ( style == "sane" )
+then
+  insertTrafficResponse(kcontext, $traffic, "stop")
+end
+
+rule "city is Boston"
+when
+  $traffic : Traffic (eval (cityLocator.city($traffic) == "Boston" ) )
+then
+  insertDrivingStyle(kcontext, "crazy")
+end
+
+rule "city is not Boston"
+when
+  $traffic : Traffic (eval (cityLocator.city($traffic) != "Boston" ) )
+then
+  insertDrivingStyle(kcontext, "sane")
+end

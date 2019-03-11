@@ -1,0 +1,7 @@
+city,traffic_light,driving_style
+Boston,yellow,crazy
+Boston,green,crazy
+Boston,red,crazy
+Boston,yellow,sane
+Boston,green,sane
+Boston,red,sane
