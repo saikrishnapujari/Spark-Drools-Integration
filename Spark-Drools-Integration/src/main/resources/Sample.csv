@@ -1,7 +1,7 @@
-city,traffic_light,driving_style
-Boston,yellow,crazy
-Boston,green,crazy
-Boston,red,crazy
-Boston,yellow,sane
-Boston,green,sane
-Boston,red,sane
+cid,traffic_light,driving_style
+0,yellow,crazy
+0,green,crazy
+0,red,crazy
+1,yellow,sane
+1,green,sane
+1,red,sane

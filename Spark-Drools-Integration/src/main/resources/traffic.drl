@@ -1,13 +1,13 @@
 package src.main.java
 
-import src.main.java.Traffic;
-import src.main.java.TrafficResponse;
-import src.main.java.DrivingStyle;
+import com.poc.drools.spark.util.Utils.Traffic;
+import com.poc.drools.spark.util.Utils.TrafficResponse;
+import com.poc.drools.spark.util.Utils.DrivingStyle;
 
-import src.main.java.CityLocator;
+import com.poc.drools.spark.service.CityLocator;
 global CityLocator cityLocator;
 
-import function src.main.java.Functions.*;
+import function com.poc.drools.spark.service.Functions.*;
 
 dialect "mvel"
 no-loop
@@ -42,16 +42,16 @@ then
   insertTrafficResponse(kcontext, $traffic, "stop")
 end
 
-rule "city is Boston"
+rule "city is Chennai"
 when
-  $traffic : Traffic (eval (cityLocator.city($traffic) == "Boston" ) )
+  $traffic : Traffic (eval (cityLocator.city($traffic) == "Chennai" ) )
 then
   insertDrivingStyle(kcontext, "crazy")
 end
 
-rule "city is not Boston"
+rule "city is not Chennai"
 when
-  $traffic : Traffic (eval (cityLocator.city($traffic) != "Boston" ) )
+  $traffic : Traffic (eval (cityLocator.city($traffic) != "Chennai" ) )
 then
   insertDrivingStyle(kcontext, "sane")
 end
