@@ -1,209 +1,202 @@
 Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-19/03/11 10:32:04 INFO SparkContext: Running Spark version 2.2.0
-19/03/11 10:32:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-19/03/11 10:32:05 INFO SparkContext: Submitted application: Sample
-19/03/11 10:32:05 INFO SecurityManager: Changing view acls to: Sai Krishna P
-19/03/11 10:32:05 INFO SecurityManager: Changing modify acls to: Sai Krishna P
-19/03/11 10:32:05 INFO SecurityManager: Changing view acls groups to: 
-19/03/11 10:32:05 INFO SecurityManager: Changing modify acls groups to: 
-19/03/11 10:32:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Sai Krishna P); groups with view permissions: Set(); users  with modify permissions: Set(Sai Krishna P); groups with modify permissions: Set()
-19/03/11 10:32:06 INFO Utils: Successfully started service 'sparkDriver' on port 56719.
-19/03/11 10:32:06 INFO SparkEnv: Registering MapOutputTracker
-19/03/11 10:32:06 INFO SparkEnv: Registering BlockManagerMaster
-19/03/11 10:32:06 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
-19/03/11 10:32:06 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
-19/03/11 10:32:06 INFO DiskBlockManager: Created local directory at C:\Users\Sai Krishna P\AppData\Local\Temp\blockmgr-59f6b313-676c-466b-be19-c87924bda36c
-19/03/11 10:32:06 INFO MemoryStore: MemoryStore started with capacity 882.6 MB
-19/03/11 10:32:06 INFO SparkEnv: Registering OutputCommitCoordinator
-19/03/11 10:32:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
-19/03/11 10:32:07 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.56.1:4040
-19/03/11 10:32:07 INFO Executor: Starting executor ID driver on host localhost
-19/03/11 10:32:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56728.
-19/03/11 10:32:07 INFO NettyBlockTransferService: Server created on 192.168.56.1:56728
-19/03/11 10:32:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
-19/03/11 10:32:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.56.1, 56728, None)
-19/03/11 10:32:07 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.56.1:56728 with 882.6 MB RAM, BlockManagerId(driver, 192.168.56.1, 56728, None)
-19/03/11 10:32:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.56.1, 56728, None)
-19/03/11 10:32:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.56.1, 56728, None)
-19/03/11 10:32:07 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
-19/03/11 10:32:07 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/spark-warehouse').
-19/03/11 10:32:07 INFO SharedState: Warehouse path is 'file:/C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/spark-warehouse'.
-19/03/11 10:32:08 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
-19/03/11 10:32:11 INFO FileSourceStrategy: Pruning directories with: 
-19/03/11 10:32:11 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0)) > 0)
-19/03/11 10:32:11 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
-19/03/11 10:32:11 INFO FileSourceScanExec: Pushed Filters: 
-19/03/11 10:32:12 INFO CodeGenerator: Code generated in 340.73688 ms
-19/03/11 10:32:12 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 219.7 KB, free 882.4 MB)
-19/03/11 10:32:12 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 882.4 MB)
-19/03/11 10:32:12 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.56.1:56728 (size: 20.6 KB, free: 882.6 MB)
-19/03/11 10:32:12 INFO SparkContext: Created broadcast 0 from csv at SparkDroolsIntTest.scala:18
-19/03/11 10:32:12 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194453 bytes, open cost is considered as scanning 4194304 bytes.
-19/03/11 10:32:13 INFO SparkContext: Starting job: csv at SparkDroolsIntTest.scala:18
-19/03/11 10:32:13 INFO DAGScheduler: Got job 0 (csv at SparkDroolsIntTest.scala:18) with 1 output partitions
-19/03/11 10:32:13 INFO DAGScheduler: Final stage: ResultStage 0 (csv at SparkDroolsIntTest.scala:18)
-19/03/11 10:32:13 INFO DAGScheduler: Parents of final stage: List()
-19/03/11 10:32:13 INFO DAGScheduler: Missing parents: List()
-19/03/11 10:32:13 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at SparkDroolsIntTest.scala:18), which has no missing parents
-19/03/11 10:32:13 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.2 KB, free 882.4 MB)
-19/03/11 10:32:13 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KB, free 882.4 MB)
-19/03/11 10:32:13 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.56.1:56728 (size: 4.3 KB, free: 882.6 MB)
-19/03/11 10:32:13 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
-19/03/11 10:32:13 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at SparkDroolsIntTest.scala:18) (first 15 tasks are for partitions Vector(0))
-19/03/11 10:32:13 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
-19/03/11 10:32:13 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
-19/03/11 10:32:13 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
-19/03/11 10:32:13 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-149, partition values: [empty row]
-19/03/11 10:32:13 INFO CodeGenerator: Code generated in 20.758996 ms
-19/03/11 10:32:13 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1291 bytes result sent to driver
-19/03/11 10:32:13 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 255 ms on localhost (executor driver) (1/1)
-19/03/11 10:32:13 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
-19/03/11 10:32:13 INFO DAGScheduler: ResultStage 0 (csv at SparkDroolsIntTest.scala:18) finished in 0.285 s
-19/03/11 10:32:13 INFO DAGScheduler: Job 0 finished: csv at SparkDroolsIntTest.scala:18, took 0.687390 s
-19/03/11 10:32:13 INFO CodeGenerator: Code generated in 17.398751 ms
-19/03/11 10:32:13 INFO FileSourceStrategy: Pruning directories with: 
-19/03/11 10:32:13 INFO FileSourceStrategy: Post-Scan Filters: 
-19/03/11 10:32:13 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
-19/03/11 10:32:13 INFO FileSourceScanExec: Pushed Filters: 
-19/03/11 10:32:13 INFO CodeGenerator: Code generated in 8.561708 ms
-19/03/11 10:32:13 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 219.7 KB, free 882.1 MB)
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 882.1 MB)
-19/03/11 10:32:14 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.56.1:56728 (size: 20.6 KB, free: 882.6 MB)
-19/03/11 10:32:14 INFO SparkContext: Created broadcast 2 from csv at SparkDroolsIntTest.scala:18
-19/03/11 10:32:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194453 bytes, open cost is considered as scanning 4194304 bytes.
-19/03/11 10:32:14 INFO FileSourceStrategy: Pruning directories with: 
-19/03/11 10:32:14 INFO FileSourceStrategy: Post-Scan Filters: 
-19/03/11 10:32:14 INFO FileSourceStrategy: Output Data Schema: struct<city: string, traffic_light: string, driving_style: string ... 1 more fields>
-19/03/11 10:32:14 INFO FileSourceScanExec: Pushed Filters: 
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 220.8 KB, free 881.9 MB)
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 20.6 KB, free 881.9 MB)
-19/03/11 10:32:14 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.56.1:56728 (size: 20.6 KB, free: 882.5 MB)
-19/03/11 10:32:14 INFO SparkContext: Created broadcast 3 from show at SparkDroolsIntTest.scala:19
-19/03/11 10:32:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194453 bytes, open cost is considered as scanning 4194304 bytes.
-19/03/11 10:32:14 INFO SparkContext: Starting job: show at SparkDroolsIntTest.scala:19
-19/03/11 10:32:14 INFO DAGScheduler: Got job 1 (show at SparkDroolsIntTest.scala:19) with 1 output partitions
-19/03/11 10:32:14 INFO DAGScheduler: Final stage: ResultStage 1 (show at SparkDroolsIntTest.scala:19)
-19/03/11 10:32:14 INFO DAGScheduler: Parents of final stage: List()
-19/03/11 10:32:14 INFO DAGScheduler: Missing parents: List()
-19/03/11 10:32:14 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[10] at show at SparkDroolsIntTest.scala:19), which has no missing parents
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 9.4 KB, free 881.9 MB)
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.3 KB, free 881.9 MB)
-19/03/11 10:32:14 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.56.1:56728 (size: 5.3 KB, free: 882.5 MB)
-19/03/11 10:32:14 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1006
-19/03/11 10:32:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[10] at show at SparkDroolsIntTest.scala:19) (first 15 tasks are for partitions Vector(0))
-19/03/11 10:32:14 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
-19/03/11 10:32:14 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
-19/03/11 10:32:14 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
-19/03/11 10:32:14 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-149, partition values: [empty row]
-19/03/11 10:32:14 INFO CodeGenerator: Code generated in 11.82244 ms
-19/03/11 10:32:14 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1313 bytes result sent to driver
-19/03/11 10:32:14 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 55 ms on localhost (executor driver) (1/1)
-19/03/11 10:32:14 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
-19/03/11 10:32:14 INFO DAGScheduler: ResultStage 1 (show at SparkDroolsIntTest.scala:19) finished in 0.056 s
-19/03/11 10:32:14 INFO DAGScheduler: Job 1 finished: show at SparkDroolsIntTest.scala:19, took 0.073216 s
-19/03/11 10:32:14 INFO CodeGenerator: Code generated in 14.957776 ms
-+------+-------------+-------------+
-|  city|traffic_light|driving_style|
-+------+-------------+-------------+
-|Boston|       yellow|        crazy|
-|Boston|        green|        crazy|
-|Boston|          red|        crazy|
-|Boston|       yellow|         sane|
-|Boston|        green|         sane|
-|Boston|          red|         sane|
-+------+-------------+-------------+
+19/04/23 03:28:47 INFO SparkContext: Running Spark version 2.2.0
+19/04/23 03:28:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/04/23 03:28:48 INFO SparkContext: Submitted application: Sample
+19/04/23 03:28:48 INFO SecurityManager: Changing view acls to: Sai Krishna P
+19/04/23 03:28:48 INFO SecurityManager: Changing modify acls to: Sai Krishna P
+19/04/23 03:28:48 INFO SecurityManager: Changing view acls groups to: 
+19/04/23 03:28:48 INFO SecurityManager: Changing modify acls groups to: 
+19/04/23 03:28:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Sai Krishna P); groups with view permissions: Set(); users  with modify permissions: Set(Sai Krishna P); groups with modify permissions: Set()
+19/04/23 03:28:48 INFO Utils: Successfully started service 'sparkDriver' on port 51062.
+19/04/23 03:28:48 INFO SparkEnv: Registering MapOutputTracker
+19/04/23 03:28:48 INFO SparkEnv: Registering BlockManagerMaster
+19/04/23 03:28:48 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/04/23 03:28:48 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/04/23 03:28:49 INFO DiskBlockManager: Created local directory at C:\Users\Sai Krishna P\AppData\Local\Temp\blockmgr-f13e078d-78d8-4de7-abc9-f29c40435069
+19/04/23 03:28:49 INFO MemoryStore: MemoryStore started with capacity 882.6 MB
+19/04/23 03:28:49 INFO SparkEnv: Registering OutputCommitCoordinator
+19/04/23 03:28:49 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/04/23 03:28:49 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://169.254.123.178:4040
+19/04/23 03:28:49 INFO Executor: Starting executor ID driver on host localhost
+19/04/23 03:28:49 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51071.
+19/04/23 03:28:49 INFO NettyBlockTransferService: Server created on 169.254.123.178:51071
+19/04/23 03:28:49 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/04/23 03:28:49 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 169.254.123.178, 51071, None)
+19/04/23 03:28:49 INFO BlockManagerMasterEndpoint: Registering block manager 169.254.123.178:51071 with 882.6 MB RAM, BlockManagerId(driver, 169.254.123.178, 51071, None)
+19/04/23 03:28:49 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 169.254.123.178, 51071, None)
+19/04/23 03:28:49 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 169.254.123.178, 51071, None)
+19/04/23 03:28:49 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+19/04/23 03:28:49 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/spark-warehouse').
+19/04/23 03:28:49 INFO SharedState: Warehouse path is 'file:/C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/spark-warehouse'.
+19/04/23 03:28:50 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/04/23 03:28:53 INFO FileSourceStrategy: Pruning directories with: 
+19/04/23 03:28:53 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0)) > 0)
+19/04/23 03:28:53 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+19/04/23 03:28:53 INFO FileSourceScanExec: Pushed Filters: 
+19/04/23 03:28:53 INFO CodeGenerator: Code generated in 292.863298 ms
+19/04/23 03:28:53 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 219.7 KB, free 882.4 MB)
+19/04/23 03:28:54 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 882.4 MB)
+19/04/23 03:28:54 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 169.254.123.178:51071 (size: 20.6 KB, free: 882.6 MB)
+19/04/23 03:28:54 INFO SparkContext: Created broadcast 0 from csv at SparkDroolsDataset.scala:30
+19/04/23 03:28:54 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194422 bytes, open cost is considered as scanning 4194304 bytes.
+19/04/23 03:28:54 INFO SparkContext: Starting job: csv at SparkDroolsDataset.scala:30
+19/04/23 03:28:54 INFO DAGScheduler: Got job 0 (csv at SparkDroolsDataset.scala:30) with 1 output partitions
+19/04/23 03:28:54 INFO DAGScheduler: Final stage: ResultStage 0 (csv at SparkDroolsDataset.scala:30)
+19/04/23 03:28:54 INFO DAGScheduler: Parents of final stage: List()
+19/04/23 03:28:54 INFO DAGScheduler: Missing parents: List()
+19/04/23 03:28:54 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at SparkDroolsDataset.scala:30), which has no missing parents
+19/04/23 03:28:54 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.2 KB, free 882.4 MB)
+19/04/23 03:28:54 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KB, free 882.4 MB)
+19/04/23 03:28:54 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 169.254.123.178:51071 (size: 4.3 KB, free: 882.6 MB)
+19/04/23 03:28:54 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+19/04/23 03:28:54 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at SparkDroolsDataset.scala:30) (first 15 tasks are for partitions Vector(0))
+19/04/23 03:28:54 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+19/04/23 03:28:54 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
+19/04/23 03:28:54 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+19/04/23 03:28:54 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-118, partition values: [empty row]
+19/04/23 03:28:54 INFO CodeGenerator: Code generated in 17.573672 ms
+19/04/23 03:28:54 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1291 bytes result sent to driver
+19/04/23 03:28:54 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 201 ms on localhost (executor driver) (1/1)
+19/04/23 03:28:54 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+19/04/23 03:28:54 INFO DAGScheduler: ResultStage 0 (csv at SparkDroolsDataset.scala:30) finished in 0.216 s
+19/04/23 03:28:54 INFO DAGScheduler: Job 0 finished: csv at SparkDroolsDataset.scala:30, took 0.598549 s
+19/04/23 03:28:54 INFO CodeGenerator: Code generated in 22.232943 ms
+19/04/23 03:28:54 INFO FileSourceStrategy: Pruning directories with: 
+19/04/23 03:28:54 INFO FileSourceStrategy: Post-Scan Filters: 
+19/04/23 03:28:54 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+19/04/23 03:28:54 INFO FileSourceScanExec: Pushed Filters: 
+19/04/23 03:28:54 INFO CodeGenerator: Code generated in 9.031603 ms
+19/04/23 03:28:54 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 219.7 KB, free 882.1 MB)
+19/04/23 03:28:54 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 882.1 MB)
+19/04/23 03:28:54 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 169.254.123.178:51071 (size: 20.6 KB, free: 882.6 MB)
+19/04/23 03:28:54 INFO SparkContext: Created broadcast 2 from csv at SparkDroolsDataset.scala:30
+19/04/23 03:28:54 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194422 bytes, open cost is considered as scanning 4194304 bytes.
+19/04/23 03:28:55 INFO FileSourceStrategy: Pruning directories with: 
+19/04/23 03:28:55 INFO FileSourceStrategy: Post-Scan Filters: 
+19/04/23 03:28:55 INFO FileSourceStrategy: Output Data Schema: struct<cid: string, traffic_light: string, driving_style: string ... 1 more fields>
+19/04/23 03:28:55 INFO FileSourceScanExec: Pushed Filters: 
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 220.8 KB, free 881.9 MB)
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 20.6 KB, free 881.9 MB)
+19/04/23 03:28:55 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 169.254.123.178:51071 (size: 20.6 KB, free: 882.5 MB)
+19/04/23 03:28:55 INFO SparkContext: Created broadcast 3 from show at SparkDroolsDataset.scala:31
+19/04/23 03:28:55 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194422 bytes, open cost is considered as scanning 4194304 bytes.
+19/04/23 03:28:55 INFO SparkContext: Starting job: show at SparkDroolsDataset.scala:31
+19/04/23 03:28:55 INFO DAGScheduler: Got job 1 (show at SparkDroolsDataset.scala:31) with 1 output partitions
+19/04/23 03:28:55 INFO DAGScheduler: Final stage: ResultStage 1 (show at SparkDroolsDataset.scala:31)
+19/04/23 03:28:55 INFO DAGScheduler: Parents of final stage: List()
+19/04/23 03:28:55 INFO DAGScheduler: Missing parents: List()
+19/04/23 03:28:55 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[10] at show at SparkDroolsDataset.scala:31), which has no missing parents
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 9.4 KB, free 881.9 MB)
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.3 KB, free 881.9 MB)
+19/04/23 03:28:55 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 169.254.123.178:51071 (size: 5.3 KB, free: 882.5 MB)
+19/04/23 03:28:55 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+19/04/23 03:28:55 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[10] at show at SparkDroolsDataset.scala:31) (first 15 tasks are for partitions Vector(0))
+19/04/23 03:28:55 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+19/04/23 03:28:55 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
+19/04/23 03:28:55 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+19/04/23 03:28:55 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-118, partition values: [empty row]
+19/04/23 03:28:55 INFO CodeGenerator: Code generated in 11.417688 ms
+19/04/23 03:28:55 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1319 bytes result sent to driver
+19/04/23 03:28:55 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 69 ms on localhost (executor driver) (1/1)
+19/04/23 03:28:55 INFO DAGScheduler: ResultStage 1 (show at SparkDroolsDataset.scala:31) finished in 0.069 s
+19/04/23 03:28:55 INFO DAGScheduler: Job 1 finished: show at SparkDroolsDataset.scala:31, took 0.082336 s
+19/04/23 03:28:55 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+19/04/23 03:28:55 INFO CodeGenerator: Code generated in 12.665396 ms
++---+-------------+-------------+
+|cid|traffic_light|driving_style|
++---+-------------+-------------+
+|  0|       yellow|        crazy|
+|  0|        green|        crazy|
+|  0|          red|        crazy|
+|  1|       yellow|         sane|
+|  1|        green|         sane|
+|  1|          red|         sane|
++---+-------------+-------------+
 
-StructType(StructField(city,StringType,true), StructField(traffic_light,StringType,true), StructField(driving_style,StringType,true))
-19/03/11 10:32:14 INFO FileSourceStrategy: Pruning directories with: 
-19/03/11 10:32:14 INFO FileSourceStrategy: Post-Scan Filters: 
-19/03/11 10:32:14 INFO FileSourceStrategy: Output Data Schema: struct<city: string, traffic_light: string, driving_style: string ... 1 more fields>
-19/03/11 10:32:14 INFO FileSourceScanExec: Pushed Filters: 
-19/03/11 10:32:14 INFO CodeGenerator: Code generated in 41.173042 ms
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 220.8 KB, free 881.7 MB)
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 20.6 KB, free 881.6 MB)
-19/03/11 10:32:14 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.168.56.1:56728 (size: 20.6 KB, free: 882.5 MB)
-19/03/11 10:32:14 INFO SparkContext: Created broadcast 5 from show at SparkDroolsIntTest.scala:22
-19/03/11 10:32:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194453 bytes, open cost is considered as scanning 4194304 bytes.
-19/03/11 10:32:14 INFO SparkContext: Starting job: show at SparkDroolsIntTest.scala:22
-19/03/11 10:32:14 INFO DAGScheduler: Got job 2 (show at SparkDroolsIntTest.scala:22) with 1 output partitions
-19/03/11 10:32:14 INFO DAGScheduler: Final stage: ResultStage 2 (show at SparkDroolsIntTest.scala:22)
-19/03/11 10:32:14 INFO DAGScheduler: Parents of final stage: List()
-19/03/11 10:32:14 INFO DAGScheduler: Missing parents: List()
-19/03/11 10:32:14 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[13] at show at SparkDroolsIntTest.scala:22), which has no missing parents
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 14.1 KB, free 881.6 MB)
-19/03/11 10:32:14 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 7.0 KB, free 881.6 MB)
-19/03/11 10:32:14 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.56.1:56728 (size: 7.0 KB, free: 882.5 MB)
-19/03/11 10:32:14 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
-19/03/11 10:32:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[13] at show at SparkDroolsIntTest.scala:22) (first 15 tasks are for partitions Vector(0))
-19/03/11 10:32:14 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
-19/03/11 10:32:14 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
-19/03/11 10:32:14 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
-19/03/11 10:32:14 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-149, partition values: [empty row]
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/drools/drools-core/7.17.0.Final/drools-core-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@64d902f9
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+StructType(StructField(cid,StringType,true), StructField(traffic_light,StringType,true), StructField(driving_style,StringType,true))
+19/04/23 03:28:55 INFO FileSourceStrategy: Pruning directories with: 
+19/04/23 03:28:55 INFO FileSourceStrategy: Post-Scan Filters: 
+19/04/23 03:28:55 INFO FileSourceStrategy: Output Data Schema: struct<cid: string, traffic_light: string, driving_style: string ... 1 more fields>
+19/04/23 03:28:55 INFO FileSourceScanExec: Pushed Filters: 
+19/04/23 03:28:55 INFO CodeGenerator: Code generated in 101.498098 ms
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 220.8 KB, free 881.7 MB)
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 20.6 KB, free 881.6 MB)
+19/04/23 03:28:55 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 169.254.123.178:51071 (size: 20.6 KB, free: 882.5 MB)
+19/04/23 03:28:55 INFO SparkContext: Created broadcast 5 from show at SparkDroolsDataset.scala:48
+19/04/23 03:28:55 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194422 bytes, open cost is considered as scanning 4194304 bytes.
+19/04/23 03:28:55 INFO SparkContext: Starting job: show at SparkDroolsDataset.scala:48
+19/04/23 03:28:55 INFO DAGScheduler: Got job 2 (show at SparkDroolsDataset.scala:48) with 1 output partitions
+19/04/23 03:28:55 INFO DAGScheduler: Final stage: ResultStage 2 (show at SparkDroolsDataset.scala:48)
+19/04/23 03:28:55 INFO DAGScheduler: Parents of final stage: List()
+19/04/23 03:28:55 INFO DAGScheduler: Missing parents: List()
+19/04/23 03:28:55 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[13] at show at SparkDroolsDataset.scala:48), which has no missing parents
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 24.2 KB, free 881.6 MB)
+19/04/23 03:28:55 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 9.0 KB, free 881.6 MB)
+19/04/23 03:28:55 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 169.254.123.178:51071 (size: 9.0 KB, free: 882.5 MB)
+19/04/23 03:28:55 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+19/04/23 03:28:55 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[13] at show at SparkDroolsDataset.scala:48) (first 15 tasks are for partitions Vector(0))
+19/04/23 03:28:55 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+19/04/23 03:28:55 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
+19/04/23 03:28:55 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+19/04/23 03:28:56 INFO FileScanRDD: Reading File path: file:///C:/Users/Sai%20Krishna%20P/eclipse-workspace/Spark-Drools-Integration/src/main/resources/Sample.csv, range: 0-118, partition values: [empty row]
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/drools/drools-core/7.17.0.Final/drools-core-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@4807f1a0
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.drools.core.concurrent.ExecutorProviderImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/kie/kie-internal/7.17.0.Final/kie-internal-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@64d902f9
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieAssemblersImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/kie/kie-internal/7.17.0.Final/kie-internal-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@4807f1a0
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieAssemblersImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieRuntimesImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieRuntimesImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieWeaversImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieWeaversImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieBeliefsImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.kie.internal.services.KieBeliefsImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/drools/drools-compiler/7.17.0.Final/drools-compiler-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@64d902f9
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Loading kie.conf from  jar:file:/C:/Users/Sai%20Krishna%20P/.m2/repository/org/drools/drools-compiler/7.17.0.Final/drools-compiler-7.17.0.Final.jar!/META-INF/kie.conf in classloader org.apache.spark.util.MutableURLClassLoader@4807f1a0
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
 
-19/03/11 10:32:14 INFO ServiceDiscoveryImpl: Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+19/04/23 03:28:56 INFO ServiceDiscoveryImpl: Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
 
 Driving Style: crazy
-Rule[traffic light yellow and driving crazy]: Traffic(yellow at Boston) => accelerate
-Rule[traffic light green]: Traffic(green at Boston) => proceed
+Rule[traffic light yellow and driving crazy]: Traffic(yellow at Chennai) => accelerate
+Rule[traffic light green]: Traffic(green at Chennai) => proceed
 Driving Style: crazy
-Rule[traffic light red]: Traffic(red at Boston) => stop
+Rule[traffic light red]: Traffic(red at Chennai) => stop
 Driving Style: crazy
-Driving Style: crazy
-Rule[traffic light yellow and driving crazy]: Traffic(yellow at Boston) => accelerate
-Rule[traffic light green]: Traffic(green at Boston) => proceed
-Driving Style: crazy
-19/03/11 10:32:16 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 192.168.56.1:56728 in memory (size: 5.3 KB, free: 882.5 MB)
-19/03/11 10:32:16 INFO ContextCleaner: Cleaned accumulator 61
-19/03/11 10:32:16 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 192.168.56.1:56728 in memory (size: 20.6 KB, free: 882.5 MB)
-19/03/11 10:32:16 INFO ContextCleaner: Cleaned accumulator 62
-19/03/11 10:32:16 INFO ContextCleaner: Cleaned accumulator 59
-19/03/11 10:32:16 INFO ContextCleaner: Cleaned accumulator 60
-19/03/11 10:32:16 INFO ContextCleaner: Cleaned accumulator 63
-Rule[traffic light red]: Traffic(red at Boston) => stop
-Driving Style: crazy
-19/03/11 10:32:16 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1377 bytes result sent to driver
-19/03/11 10:32:16 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 2193 ms on localhost (executor driver) (1/1)
-19/03/11 10:32:16 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
-19/03/11 10:32:16 INFO DAGScheduler: ResultStage 2 (show at SparkDroolsIntTest.scala:22) finished in 2.194 s
-19/03/11 10:32:16 INFO DAGScheduler: Job 2 finished: show at SparkDroolsIntTest.scala:22, took 2.210770 s
-19/03/11 10:32:16 INFO CodeGenerator: Code generated in 21.496197 ms
-+------+-------------+-------------+----------+
-|  city|traffic_light|driving_style|  response|
-+------+-------------+-------------+----------+
-|Boston|       yellow|        crazy|accelerate|
-|Boston|        green|        crazy|   proceed|
-|Boston|          red|        crazy|      stop|
-|Boston|       yellow|         sane|accelerate|
-|Boston|        green|         sane|   proceed|
-|Boston|          red|         sane|      stop|
-+------+-------------+-------------+----------+
+Driving Style: sane
+Rule[traffic light yellow and driving sane]: Traffic(yellow at Hyderabad) => stop
+Rule[traffic light green]: Traffic(green at Hyderabad) => proceed
+Driving Style: sane
+Rule[traffic light red]: Traffic(red at Hyderabad) => stop
+Driving Style: sane
+19/04/23 03:28:57 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1382 bytes result sent to driver
+19/04/23 03:28:57 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 1086 ms on localhost (executor driver) (1/1)
+19/04/23 03:28:57 INFO DAGScheduler: ResultStage 2 (show at SparkDroolsDataset.scala:48) finished in 1.087 s
+19/04/23 03:28:57 INFO DAGScheduler: Job 2 finished: show at SparkDroolsDataset.scala:48, took 1.104751 s
+19/04/23 03:28:57 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+19/04/23 03:28:57 INFO CodeGenerator: Code generated in 15.408033 ms
++---+------+-----+----------+
+|cid| light|style|    action|
++---+------+-----+----------+
+|  0|yellow|crazy|accelerate|
+|  0| green|crazy|   proceed|
+|  0|   red|crazy|      stop|
+|  1|yellow| sane|      stop|
+|  1| green| sane|   proceed|
+|  1|   red| sane|      stop|
++---+------+-----+----------+
 
-StructType(StructField(city,StringType,true), StructField(traffic_light,StringType,true), StructField(driving_style,StringType,true), StructField(response,StringType,true))
-19/03/11 10:32:16 INFO SparkContext: Invoking stop() from shutdown hook
-19/03/11 10:32:16 INFO SparkUI: Stopped Spark web UI at http://192.168.56.1:4040
-19/03/11 10:32:16 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
-19/03/11 10:32:16 INFO MemoryStore: MemoryStore cleared
-19/03/11 10:32:16 INFO BlockManager: BlockManager stopped
-19/03/11 10:32:16 INFO BlockManagerMaster: BlockManagerMaster stopped
-19/03/11 10:32:16 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
-19/03/11 10:32:16 INFO SparkContext: Successfully stopped SparkContext
-19/03/11 10:32:16 INFO ShutdownHookManager: Shutdown hook called
-19/03/11 10:32:16 INFO ShutdownHookManager: Deleting directory C:\Users\Sai Krishna P\AppData\Local\Temp\spark-6ba3bf79-8cb9-4b2a-9abf-17ddd16d17cf
+StructType(StructField(cid,IntegerType,true), StructField(light,StringType,true), StructField(style,StringType,true), StructField(action,StringType,true))
+19/04/23 03:28:57 INFO SparkContext: Invoking stop() from shutdown hook
+19/04/23 03:28:57 INFO SparkUI: Stopped Spark web UI at http://169.254.123.178:4040
+19/04/23 03:28:57 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/04/23 03:28:57 INFO MemoryStore: MemoryStore cleared
+19/04/23 03:28:57 INFO BlockManager: BlockManager stopped
+19/04/23 03:28:57 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/04/23 03:28:57 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/04/23 03:28:57 INFO SparkContext: Successfully stopped SparkContext
+19/04/23 03:28:57 INFO ShutdownHookManager: Shutdown hook called
+19/04/23 03:28:57 INFO ShutdownHookManager: Deleting directory C:\Users\Sai Krishna P\AppData\Local\Temp\spark-8bd84a83-99a1-4ef7-a0ec-a3ffd23f9eae
